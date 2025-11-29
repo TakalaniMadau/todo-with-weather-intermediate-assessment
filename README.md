@@ -9,10 +9,14 @@ This is a todo application with weather integration.
 
 ## Technologies
 
-- Ruby on Rails
-- Tailwind CSS
-- Stimulus.js
-- Turbo
+- Ruby on Rails (backend framework)
+- Tailwind CSS (styling)
+- PostgreSQL (database)
+- Stimulus.js (frontend interactivity)
+- Turbo (fast, seamless navigation)
+- Rspec & Factory Bot (testing)
+- Weather API (OpenWeatherMap)
+- RuboCop (code linting)
 
 ## Getting Started
 
@@ -25,20 +29,25 @@ This is a todo application with weather integration.
 
 ### Installation
 
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the repository: `git clone git@github.com:TakalaniMadau/todo-with-weather-intermediate-assessment.git`
 2. Run `bundle install`
-3. Run `bin/dev` to start the development server
 
-- Configuration
+### Configuration
 
 - Database creation
 
+- Run `rails db:create` to create the database
+
 - Database initialization
+
+- Run `rails db:migrate` to run migrations
 
 - How to run the test suite
 
-- Services (job queues, cache servers, search engines, etc.)
+- Run `rails test` to run the test suite
 
-- Deployment instructions
+### Run Application
 
-- ...
+- Run `rails server` to start the development server
+
+The application will be available at http://localhost:3000
