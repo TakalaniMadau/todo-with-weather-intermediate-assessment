@@ -32,7 +32,7 @@ Rails/TimeZone:
   Enabled: true
 
 
-Rails/Enumhash:
+Rails/EnumHash:
   Enabled: true
 
 Style/ClassAndModuleChildren:
