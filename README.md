@@ -22,7 +22,7 @@ This is a todo application with weather integration.
 
 ### Prerequisites
 
-- Ruby 3.4.2
+- Ruby 3.4.7
 - Rails 7.2.3
 - Node 22.11.0
 - Yarn 1.22.22 or npm 10.9.0
@@ -51,3 +51,8 @@ This is a todo application with weather integration.
 - Run `rails server` to start the development server
 
 The application will be available at http://localhost:3000
+
+### Run Tests
+
+- Run `rspec` to run the RSpec test suite
+- Run `bundle exec rubocop -a` to run code linting and auto-correct

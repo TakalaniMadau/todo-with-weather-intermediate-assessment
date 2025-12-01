@@ -6,8 +6,6 @@ inherit_gem:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
   AutoCorrect: true
-
-Style/StringLiterals:
   Include:
     - "app/**/*"
     - "config/**/*"
@@ -30,7 +28,6 @@ Rails/Date:
 
 Rails/TimeZone:
   Enabled: true
-
 
 Rails/EnumHash:
   Enabled: true
