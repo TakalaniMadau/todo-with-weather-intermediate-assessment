@@ -48,7 +48,7 @@ This is a todo application with weather integration.
 
 ### Run Application
 
-- Run `rails server` to start the development server
+- Run `bin/dev` to start the development server
 
 The application will be available at http://localhost:3000
 
