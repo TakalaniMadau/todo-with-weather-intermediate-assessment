@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+:root {
+  --base-bg: #fff;
+  --base-text: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base-bg: #000;
+    --base-text: #fff;
+  }
+}
+
+html {
+  color-scheme: light dark;
+}
+
+:root:has(#dark-mode-toggle:checked) {
+  color-scheme: dark;
+  --base-bg: #000;
+  --base-text: #fff;
+}
+
+:root:has(#light-mode-toggle:checked) {
+  color-scheme: light;
+  --base-bg: #fff;
+  --base-text: #000;
+}
+
+body {
+  color: var(--base-text);
+  background-color: var(--base-bg);
+}

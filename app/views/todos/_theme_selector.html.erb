@@ -1,0 +1,15 @@
+<div class="flex items-center py-8 px-8" data-controller="theme">
+  <%= radio_button_tag :dark_mode, "on", false,
+    class: "mx-4",
+    id: "dark-mode-toggle",
+    data: { action: "change->theme#change", theme_target: "darkRadio" }
+  %>
+  <label for="dark-mode-toggle">Dark Mode</label>
+
+  <%= radio_button_tag :dark_mode, "off", true,
+    class: "mx-4",
+    id: "light-mode-toggle",
+    data: { action: "change->theme#change", theme_target: "lightRadio" }
+  %>
+  <label for="light-mode-toggle">Light Mode</label>
+</div>
