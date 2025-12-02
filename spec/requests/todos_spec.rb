@@ -18,11 +18,19 @@ RSpec.describe "/todos", type: :request do
   # Todo. As you add validations to Todo, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {
+      title: "My Todo",
+      description: "This is a test todo",
+      status: false
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {
+      title: nil,
+      description: nil,
+      status: nil
+    }
   }
 
   describe "GET /index" do

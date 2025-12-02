@@ -13,6 +13,6 @@ RSpec.describe "todos/show", type: :view do
     render
     expect(rendered).to match(/Title/)
     expect(rendered).to match(/MyText/)
-    expect(rendered).to match(/false/)
+    expect(rendered).to match(/Incomplete/)
   end
 end
