@@ -27,6 +27,12 @@ This is a todo application with weather integration.
 - Node 22.11.0
 - Yarn 1.22.22 or npm 10.9.0
 
+### GEMS Installed
+
+- rails-controller-testing: For testing controllers
+- rspec-rails: For testing with RSpec
+- factory_bot_rails: For creating test data
+
 ### Installation
 
 1. Clone the repository: `git clone git@github.com:TakalaniMadau/todo-with-weather-intermediate-assessment.git`
