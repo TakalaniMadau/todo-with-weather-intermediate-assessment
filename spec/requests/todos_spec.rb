@@ -94,14 +94,20 @@ RSpec.describe "/todos", type: :request do
   describe "PATCH /update" do
     context "with valid parameters" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        {
+          title: "Updated Todo",
+          description: "This is an updated test todo",
+          status: true
+        }
       }
 
       it "updates the requested todo" do
         todo = Todo.create! valid_attributes
         patch todo_url(todo), params: { todo: new_attributes }
         todo.reload
-        skip("Add assertions for updated state")
+        expect(todo.title).to eq("Updated Todo")
+        expect(todo.description).to eq("This is an updated test todo")
+        expect(todo.status).to eq(true)
       end
 
       it "redirects to the todo" do

@@ -2,7 +2,8 @@ class TodosController < ApplicationController
   before_action :set_todo, only: %i[ show edit update destroy ]
 
   def index
-    @todos = Todo.all
+    @todos = Todo.todo
+    @completed = Todo.completed
   end
 
   def show
